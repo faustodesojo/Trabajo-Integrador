@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Pangolin&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+}
+#hero{
+    /* background-image: url(assets/bar.jpg);
+    background-repeat: no-repeat; */
+    height: 500px;
+    background-size: 100% 100%;
+}
+.hero__info{
+    width: 80vw;
+    font-family: 'Pangolin', cursive;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.hero__info h1{
+    font-size: 2em;
+    padding: 25px;
+}
+.hero_info p{
+    font-size: 12px;
+    white-space:pre-line
+}
+.hero__info span{
+    color: crimson;
+}
+.hero__img {
+    position: relative;
+    height: 400px;
+    width: 100vw;
+  }
+  
+  .hero__img img {
+    height: 400px;
+    width: 100vw;
+    margin: auto;
+    transition: transform 0.3s; 
+  }
+  
+  .imagen-hover {
+    display: none;
+    position: absolute;
+    transform: scale(0);
+    top: 0;
+    left: 0;
+  }
+  
+  .hero__img:hover .imagen-normal {
+    transform: scale(0);
+  }
+  
+  .hero__img:hover .imagen-hover {
+    display: block;
+    transform: scale(1);
+  }
+  
+  
