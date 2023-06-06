@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&family=Pangolin&display=swap');
 :root{
+  /* colors */
   --primary: crimson;
   --secondary: aqua;
   --background: rgb(25,25,25); 
+  /* fonts size */
+  --title: 2em;
+  --text: 16px
 }
 *{
     margin: 0;
@@ -19,23 +23,27 @@ body{
 }
 
 /* HEADER */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .header{
-  height: 65px;
-  width: 100%;
+  height: 80px;
   display: flex;
-  /* text-align: center; */
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  background: var(--background);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  /* z-index: 10; */
   padding: 0 50px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  background: var(--background);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 .navbar ul{
-  display: flex;
-  gap: 50px;
   list-style-type: none;
+  display: flex;
+  gap: 100px;
 }
 .navbar{
   display: flex;
@@ -44,17 +52,17 @@ body{
   font-size: 36px;
   display: none;
 }
-#toggle-menu {
+#toggle-menu{
   display: none;
 }
 .navbar-link{
   text-decoration: none;
-  color: var(--primary);
+  color: black;
   font-weight: 300;
 }
 .navbar a{
   color: var(--primary);
-  font-size: 16px;
+  font-size: var(--text);
   font-weight: 600;
 }
 .navbar li:hover{
@@ -119,12 +127,12 @@ opacity: 0.8;
     border: 4px double white;
 }
 .hero__info h1{
-    font-size: 2em;
+    font-size: var(--title);
     padding: 25px;
     margin: 0 auto;
 }
 .hero__info p{
-    font-size: 16px;
+    font-size: var(--text);
     margin-bottom: 25px
 }
 .hero__info span{
@@ -163,40 +171,40 @@ opacity: 0.8;
   justify-content: center;
   margin-bottom: 50px;
 }
+.drinks__info h1{
+  font-size: var(--title);
+  color: var(--primary);
+}
 #drinks img{
   height: 200px;
   width: 200px;
+  box-shadow:2px 1px 4px 0px var(--secondary);
 }
 .drinks__img{
   width: 50%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
-  margin-bottom: 50px;  
+  margin-bottom: 50px;
+    
 }
 .drinks__img h3, .drinks__img span{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  font-size: var(--text);
+  font-weight: 500;
 }
 .drinks__cards{
-  padding: 20px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  width: 40%;
-  text-align: center;
   position: relative;
-  min-height: 300px;
-  margin-right: 25px;
-  margin-left: 25px;
-}
-.drinks__cards {
-  position: relative;
-  width: 300px;
-  height: 300px;
+  min-height: 200px;
+  width: 200px;
+  height: 200px;
+  margin: 50px 50px;
+  /* background-color: var(--primary); */
+  align-items: center;
+  display: flex;
+  justify-content:center;
+
 }
 
 .tragos {
@@ -212,13 +220,13 @@ opacity: 0.8;
   opacity: 0.2;
 }
 
-  @media (max-width: 576px){
-    .navbar ul{
-      background: white;
+@media(max-width: 576px){
+  .navbar ul{
+      background: var(--background);
       width: 100%;
-      height: calc(100vh - 85px);
-      position: absolute;
-      top: 85px;
+      height: calc(100vh - 80px);
+      position:absolute;
+      top: 80px;
       left: 0;
       flex-direction: column;
       align-items: center;
@@ -226,9 +234,9 @@ opacity: 0.8;
       display: none;
   }
   .navbar i{
-    display: block;
+      display: block;
   }
-  #toggle-menu:checked ~ .navbar.list {
-    display: flex;
+  #toggle-menu:checked ~ .navbar-list {
+      display: flex;
   }
 }
