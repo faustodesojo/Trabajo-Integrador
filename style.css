@@ -168,13 +168,19 @@ opacity: 0.8;
   width: 200px;
 }
 .drinks__img{
-  width: 80%;
+  width: 50%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 50px;  
+}
+.drinks__img h3, .drinks__img span{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .drinks__cards{
   padding: 20px;
@@ -187,12 +193,24 @@ opacity: 0.8;
   margin-right: 25px;
   margin-left: 25px;
 }
-  .drinks__cards{
-    position: relative;
-  }
-  .drinks__cards__text{
-    position: relative;
-  }
+.drinks__cards {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.tragos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .5s ease;
+}
+
+.drinks__cards:hover .tragos {
+  opacity: 0.2;
+}
 
   @media (max-width: 576px){
     .navbar ul{
