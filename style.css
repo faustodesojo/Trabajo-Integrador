@@ -85,7 +85,6 @@ body{
 .header img{
   width: 65px;
   height: 65px;
-  margin-right: 250px;
 }
 /* MAIN */
 main{
@@ -220,13 +219,29 @@ opacity: 0.8;
   opacity: 0.2;
 }
 
+.contact__info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px 25px;
+}
+.contact__info iframe{
+  margin: 50px 50px;
+}
+form input, option  {
+  color: black;
+}
+form{
+  display: flex;
+  flex-direction: column
+}
 @media(max-width: 576px){
   .navbar ul{
       background: var(--background);
       width: 100%;
       height: calc(100vh - 80px);
       position:absolute;
-      top: 80px;
+      top: 79px;
       left: 0;
       flex-direction: column;
       align-items: center;
