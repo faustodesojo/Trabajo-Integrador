@@ -228,13 +228,22 @@ opacity: 0.8;
 .contact__info iframe{
   margin: 50px 50px;
 }
-form input, option  {
+.contact__info__form input,.contact__info__form option,.contact__info__formselect {
   color: black;
 }
-form{
+.contact__info__form{
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
+.contact__info__form input{
+  
+}
+.contact__info__form div{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
 @media(max-width: 576px){
   .navbar ul{
       background: var(--background);

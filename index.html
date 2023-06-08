@@ -148,26 +148,40 @@
         <p>¿En que podemos ayudarte? Su opinion es muy importante para nostros</p>
     </div>
     <div class="contact__info">
-        <form>
+        <form class="contact__info__form">
+        <div class="nombre">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-
+        </div>
+        <div class="apellido">
             <label for="Apellido">Apellido</label>
             <input type="text" name="Apellido" id="Apellido" placeholder="Apellido">
-
+        </div>
+        <div class="email">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Correo electronico">
-
+        </div>
+        <div class="telefono">
             <label for="telefono">Numero de telefono</label>
             <input type="number" name="telefono" id="telefono" placeholder="Numero de telefono">
-
+        </div>
+        <div class="contacto">
             <label for="contacto">Motivo de su consulta</label>
             <select name="contacto" id="contacto">
-                <option value="reserva">Quiero realizar una reserva</option>
+                <option value="reserva">Quiero hacer una reserva</option>
                 <option value="Consulta">Quiero realizar una consulta</option>
                 <option value="critica">Critica Constructiva</option>
             </select>
+        </div>
+        <div class="texto">
+            <label for="texto">Tu mensaje</label>
+            <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Dejanos tu mensaje!"></textarea>
+        </div>
+            <input type="submit" value="enviar">
         </form>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
     </div>
     </section>
 </main>
