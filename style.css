@@ -237,6 +237,7 @@ opacity: 0.8;
 }
 .contact__info__form input{
   
+  align-self: start;
 }
 .contact__info__form div{
   display: flex;
