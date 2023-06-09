@@ -40,7 +40,7 @@
     border-radius: 5px;
 }
 
-label span{
+.contact__form label span{
     opacity: 0.5;
     font-size: 12px;
     font-weight: 100;
@@ -89,3 +89,21 @@ text-align: center;
     transform: scale(1.1);
     transition: all 0.3s;
 }
+
+
+
+.scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .scroll-top-button:hover {
+    background-color: #555;
+  }
+  
