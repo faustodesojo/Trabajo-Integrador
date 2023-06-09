@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="contact">
+    <div class="contact__text">
+        <h1>Contactanos</h1>
+        <p>¿En que podemos ayudarte? tu opinion nos interesa!</p>
+    </div>
+    <div class="contact__form">
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required>
+
+            <label for="telefono">Numero telefonico</label>
+            <input type="number" name="telefono" id="telefono" required>
+
+            <label for="consulta">Cual es el motivo de su consulta?</label>
+            <select name="consulta" id="consulta" required>
+                <option value="consulta">Quiero hacer una reserva</option>
+                <option value="consulta">Quiero consultar algo</option>
+                <option value="consulta">Critica constructiva</option>
+            </select>
+            
+            <label for="texto">Dejanos tu mensaje <span>- opcional</span></label>
+            <textarea name="texto" id="texto" cols="20" rows="10">
+            </textarea>
+            <input class="enviar" type="submit" value="Enviar">
+        </form></div>
+        <div class="redes">
+            <a href="https://www.facebook.com" target="_blank" title="facebook"><img src="assets/facebook.png" alt="logo facebook"></a>
+            <a href="https://www.whatsapp.com/" target="_blank"title="whatsapp"><img src="assets/wsp1.png" alt="logo whatsapp"></a>
+            <a href="https://www.instagram.com/" target="_blank" title="instagram"><img src="assets/instagram.png" alt="logo instagram"></a>
+            <a href="https://outlook.live.com/owa/" target="_blank" title="mail"><img src="assets/email.png" alt="logo email"></a>
+        </div>
+    </section>
+    <footer>
+        <a href="#contact" class="scroll-top-button">Ir arriba</a>
+
+    </footer>
+</body>
+</html>

@@ -37,7 +37,7 @@ body{
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
   background: var(--background);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
 }
 .navbar ul{
@@ -248,10 +248,14 @@ opacity: 0.8;
 @media(max-width: 576px){
   .navbar ul{
       background: var(--background);
-      width: 100%;
-      height: calc(100vh - 80px);
+      width: 102%;
+      height: calc(100vh - 70px);
       position:absolute;
+<<<<<<< HEAD
       top: 79px;
+=======
+      top:79px;
+>>>>>>> refs/remotes/origin/main
       left: 0;
       flex-direction: column;
       align-items: center;
