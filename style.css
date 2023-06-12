@@ -447,14 +447,19 @@ footer iframe{
     width: 50%;
     margin: 0 auto;
   }
-  iframe{
-    display: none;
+  footer{
+    flex-direction: column;
+    gap: 25px;
   }
+  /* iframe{
+    display: none;
+  } */
   .footer-logo{
     display: none;
   } 
   footer li{
     font-size: 10px;
+
   }
   .navegacion li{
     margin-top: 5px;
@@ -462,6 +467,7 @@ footer iframe{
   .redes-sociales li{
     width: 30px;
     height: 30px;
+    margin: 0 10px;
   }
   .redes-sociales img{
     width: 30px;
