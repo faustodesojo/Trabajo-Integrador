@@ -12,23 +12,24 @@
 <body>
     <!-- HEADER -->
 <header class="header">
-    <img src="assets/asd.png" alt="logo">
+    <img class="logo" src="assets/logo.png" alt="logo">
     <nav class="navbar">
         <label for="toggle-menu"><i class="fa-solid fa-bars"></i>
         </label>
         <input type="checkbox" id="toggle-menu">
         <ul class="navbar-list">
-            <li><a class="navbar-link" href="" >Inicio</a></li>
+            <li><a class="navbar-link" href="#" >Inicio</a></li>
             <li><a class="navbar-link" href="#hero" >Historia</a></li>
             <li><a class="navbar-link" href="#drinks" >Tragos</a></li>
-            <li><a class="navbar-link" href="" >Contacto</a></li>
-            <li><a class="navbar-link" href="" >Reservas</a></li>
-        </ul>
+            <li><a class="navbar-link" href="#contact" >Contacto</a></li>
+                <!-- <li><a class="navbar-link" href="" >Reserva</a></li> -->
+        </ul>    
     </nav>
+    <img src="assets/login.png" alt="" class="login">
 </header>
 <main>
-        <div class="background-image">
-            <img src="assets/asd.png" alt="">
+        <div class="background-image" id="inicio">
+            <img src="assets/logo.png" alt="">
         </div>
         <!-- HERO Section -->
     <section id="hero">
@@ -39,8 +40,8 @@
         <p>Desde el primer día, supimos que este proyecto requeriría mucho trabajo y esfuerzo. Nos adentramos en el mundo de la nostalgia, buscando el lugar perfecto que pudiera albergar nuestra visión. Pasamos horas y horas visitando locales, imaginando cómo podríamos transformarlos en un pedacito de los años 80. Finalmente, encontramos el lugar adecuado, con sus paredes gastadas y su encanto desgastado, perfecto para dar vida a nuestro bar retro...</p>
         <p>¡Lea mas sobre nuestra historia aqui!</p>
             <button><a href="#">Historia</a></button>
-    </div>    
-    <img class="hero__img" src="assets/bar retro.jpg" alt="foto del bar">   
+    </div>
+    <img class="hero__img" src="assets/bar retro.jpg" alt="foto del bar">
     </section>
     <!-- End of HERO Section -->
     <!-- Drinks Section -->
@@ -137,54 +138,82 @@
                     <div class="drinks__cards__text">
                 <h3>Whisky a las Rocas</h3>
                 <span>$1250</span>
-            </div>  
+            </div>
         </div>
     </div>
     </section>
-    <!-- End of Drinks Section -->
     <section id="contact">
-    <div class="contact__tittle">
-        <h1>Contáctenos</h1>
-        <p>¿En que podemos ayudarte? Su opinion es muy importante para nostros</p>
-    </div>
-    <div class="contact__info">
-        <form class="contact__info__form">
-        <div class="nombre">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <div class="contact__text">
+            <h1>Contactanos</h1>
+            <p>¿En que podemos ayudarte? tu opinion nos interesa!</p>
         </div>
-        <div class="apellido">
-            <label for="Apellido">Apellido</label>
-            <input type="text" name="Apellido" id="Apellido" placeholder="Apellido">
+        <div class="contact__form">
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" required>
+
+                <label for="telefono">Numero telefonico</label>
+                <input type="number" name="telefono" id="telefono" required>
+
+                <label for="consulta">Cual es el motivo de su consulta?</label>
+                <select name="consulta" id="consulta" required>
+                    <option value="reserva">Quiero hacer una reserva</option>
+                    <option value="consulta">Quiero consultar algo</option>
+                    <option value="critica">Critica constructiva</option>
+                </select>
+
+                <label for="texto">Dejanos tu mensaje <span>- opcional</span></label>
+                <textarea name="texto" id="texto" cols="20" rows="10">
+                </textarea>
+                <input class="enviar" type="submit" value="Enviar">
+            </form>
         </div>
-        <div class="email">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Correo electronico">
+            <div class="redes">
+                <a href="https://www.facebook.com" target="_blank" title="facebook"><img src="assets/facebook.png" alt="logo facebook"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"title="whatsapp"><img src="assets/wsp1.png" alt="logo whatsapp"></a>
+                <a href="https://www.instagram.com/" target="_blank" title="instagram"><img src="assets/instagram.png" alt="logo instagram"></a>
+                <a href="https://outlook.live.com/owa/" target="_blank" title="mail"><img src="assets/email.png" alt="logo email"></a>
+            </div>
+        </section>
+    </main>           
+    <a href="#inicio" class="scroll-top-button"><img src="assets/up-arrow.png" alt=""></a>
+
+    <footer>
+        <a href="#"><img class="footer-logo" src="assets/logo.png" alt="logo"></a>
+        <div class="footer__contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li>
+                    <img src="assets/llamada.png" alt="telefono"> (0221) 5412257
+                </li>
+                <li>
+                    <img src="assets/ubicacion.png" alt="ubicacion">  Camino Gral. Belgrano 2820
+                </li>
+                <li>
+                    <img src="assets/email.png" alt="email">  Info@alambradosbelgrano.com.ar
+                </li>
+            </ul>
         </div>
-        <div class="telefono">
-            <label for="telefono">Numero de telefono</label>
-            <input type="number" name="telefono" id="telefono" placeholder="Numero de telefono">
+        <div class="navegacion">
+            <h3>Información</h3>
+            <ul>
+                <li><a href="#history">¿Quienes somos?</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Reservas</a></li>
+            </ul>
         </div>
-        <div class="contacto">
-            <label for="contacto">Motivo de su consulta</label>
-            <select name="contacto" id="contacto">
-                <option value="reserva">Quiero hacer una reserva</option>
-                <option value="Consulta">Quiero realizar una consulta</option>
-                <option value="critica">Critica Constructiva</option>
-            </select>
-        </div>
-        <div class="texto">
-            <label for="texto">Tu mensaje</label>
-            <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Dejanos tu mensaje!"></textarea>
-        </div>
-            <input type="submit" value="enviar">
-        </form>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
-    </section>
-</main>
-<footer></footer>
+            <div class="redes-sociales">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="assets/wsp1.png" alt="logo wsp" title="whatsapp"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="logo facebook"title="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/instagram.png" alt="logo instagram" title="instagram"></a></li>
+                </ul>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.6316594477635!2d-58.018584387868195!3d-34.89059467259344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2ddc20d7b6a81%3A0xa28471d53fbc9a5a!2sAlambrados%20Belgrano%20SRL!5e0!3m2!1ses-419!2sar!4v1683391693629!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
 </body>
 </html>
