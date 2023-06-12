@@ -426,7 +426,7 @@ footer iframe{
     width: 90%;
   }
   .hero__img{
-    width: 400px;
+    width: 80vw;
     height: 400px;
     margin-top: 50px;
   }
@@ -446,5 +446,25 @@ footer iframe{
   .contact__form form{
     width: 50%;
     margin: 0 auto;
+  }
+  iframe{
+    display: none;
+  }
+  .footer-logo{
+    display: none;
+  } 
+  footer li{
+    font-size: 10px;
+  }
+  .navegacion li{
+    margin-top: 5px;
+  }
+  .redes-sociales li{
+    width: 30px;
+    height: 30px;
+  }
+  .redes-sociales img{
+    width: 30px;
+    height: 30px;
   }
 }
