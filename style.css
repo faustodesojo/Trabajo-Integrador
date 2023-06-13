@@ -480,4 +480,7 @@ footer iframe{
     width: 30px;
     height: 30px;
   }
+  .contact__form input, .contact__form select, .contact__form option, .contact__form textarea{
+    width: 80%;
+  }
 }

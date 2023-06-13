@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Pangolin&display=swap');
+:root{
+  /* colors */
+  --primary: crimson;
+  --secondary: aqua;
+  --background: rgb(25,25,25); 
+  /* fonts size */
+  --title: 2em;
+  --text: 16px
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pangolin', cursive;
+    text-decoration: none;
+    color: white;
+}
+body{
+  width: 100vw;
+  height: 500px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1em;
+    padding: 30px 30px;
+    align-items: center;
+    justify-content: center;
+}
+.login__text h1{
+    color: var(--primary);
+}
