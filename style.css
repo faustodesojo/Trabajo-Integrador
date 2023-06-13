@@ -47,6 +47,12 @@ body{
 }
 .navbar{
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-list{
+  align-items: center;
+  justify-content: center;
 }
 .navbar i{
   font-size: 36px;
@@ -83,7 +89,7 @@ body{
 .login{
   width: 35px;
   height: 35px;
-  background-color: var(--secondary);
+  background-color: white;
   border-radius: 3em;
 }
 .login:hover{
@@ -242,9 +248,9 @@ opacity: 0.8;
   flex-direction: column;
   width: 50vw;
 }
-.contact__form{
-  /* margin: 0 auto; */
-  width: 50%;
+.contact__form input, .contact__form select, .contact__form option, .contact__form textarea{
+  width: 40%;
+  margin: 0 auto;
 }
 .contact__form .enviar{
   max-width: max-content;
@@ -267,9 +273,10 @@ opacity: 0.8;
 }
 .contact__form input, .contact__form select, .contact__form option{
   background: white;
-  height: 20px;
+  height: 25px;
   border-radius: 5px;
   color: black;
+
 }
 
 .contact__form label span{
