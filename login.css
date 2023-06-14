@@ -13,15 +13,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Pangolin', cursive;
-    text-decoration: none;
-    color: white;
 }
 body{
   width: 100vw;
   height: 500px;
   background-color: var(--background);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -29,11 +27,74 @@ form{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 1em;
+    border-radius: 5px;
     padding: 30px 30px;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    box-shadow: crimson 1.95px 1.95px 2.6px;
+}
+.login__text{
+  width: 400px;
+  margin: 50px 150px;
 }
 .login__text h1{
     color: var(--primary);
+    font-size: 50px;
+}
+.login__text p{
+  color: white;
+  font-size: 25px;
+}
+
+form input{
+  height: 40px;
+  margin-bottom: 30px;
+  width: 20vw;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.iniciar-sesion{
+  width:100%;
+  height: 40px;
+  border-radius: 6px;
+  background-color: var(--primary);
+  color: white;
+  font-size: 20px;
+}
+.registrate{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: var(--secondary);
+  margin-top: 10px;
+  font-size: 20px;
+}
+.registrate a{
+  width: 100%;
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}
+@media (max-width: 768px){
+  .login__text h1{
+    font-size: var(--title);
+  }
+  .login__text p{
+    font-size: var(--text);
+  }
+  form{
+    width: 60vw;
+  }
+  form input{
+    width: 50vw;
+  }
+  .registrate button{
+    font-size: 16px;
+  }
 }

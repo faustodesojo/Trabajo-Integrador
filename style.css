@@ -137,6 +137,7 @@ opacity: 0.8;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 
 }
 .hero__info{
@@ -147,6 +148,7 @@ opacity: 0.8;
     text-align: center;
     margin-right: 50px;
     border: 4px double white;
+
 }
 .hero__info h1{
     font-size: var(--title);
@@ -403,7 +405,12 @@ footer iframe{
 .navegacion a{
   color:white
 }
-
+@media (max-width:992px){
+  .hero__info{
+    width: 80vw;
+    margin-bottom: 50px;
+  }
+}
 @media(max-width: 576px){
   .navbar ul{
       background: var(--background);
@@ -451,7 +458,7 @@ footer iframe{
       width: 100%;
     }
   .contact__form form{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
   }
   footer{
@@ -482,5 +489,15 @@ footer iframe{
   }
   .contact__form input, .contact__form select, .contact__form option, .contact__form textarea{
     width: 80%;
+  }
+  .drinks__img{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .drinks__text{
+text-align: center;
   }
 }
